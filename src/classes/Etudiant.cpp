@@ -21,7 +21,7 @@ string Etudiant::getNom() const
 
 void Etudiant::setNom(string nom)
 {
-
+	m_nomEtudiant = nom;
 }
 
 
@@ -32,7 +32,7 @@ int Etudiant::getNoteSur20() const
 
 void Etudiant::setNoteSur20(int noteSur20)
 {
-
+	m_noteSur20 = noteSur20;
 }
 
 
@@ -43,7 +43,7 @@ int Etudiant::getNoteSur10() const
 
 void Etudiant::setNoteSur10(int noteSur10)
 {
-
+	m_noteSur10 = noteSur10;
 }
 
 
