@@ -1,4 +1,4 @@
-#include <string>
+#include <string>//Librairie permettant de traiter les chaînes de caractères sans faire des tableaux de char
 using namespace std;
 
 #ifndef ETUDIANT_H
@@ -6,20 +6,25 @@ using namespace std;
 
 class Etudiant
 {
+
 public:
-    string getEtudiant() const;
-    void setEtudiant();
-    int getNoteSur20() const;
-    void setNoteSur20();
-    int getNoteSur10() const;
-    void setNoteSur10();
-    float calculerMoyenne();
+    /*Constructeurs*/
+    Etudiant();//Constructeur par défaut
+    Etudiant(string nomEtudiant, int noteSur20, int noteSur10);//Constructeur avec paramètres
+
+    /*Méthodes*/
+    string getNom() const;//Renvoie la valeur du nom d'étudiant
+    void setNom(string nom);//Met la valeur du nom d'étudiant
+    int getNoteSur20() const;//Renvoie la valeur de la note/20
+    void setNoteSur20(int noteSur20);//Met la valeur de la note/20
+    int getNoteSur10() const;//Renvoie la valeur de la note/10
+    void setNoteSur10(int noteSur10);//Met la valeur de la note/10
+    float calculerMoyenne();//Calcule la moyenne des notes
+
 private:
-    string etudiant;
-    int noteSur20;
-    int noteSur10;
+    string m_nomEtudiant;
+    int m_noteSur20;
+    int m_noteSur10;
 };
-
-
 
 #endif // ETUDIANT_H

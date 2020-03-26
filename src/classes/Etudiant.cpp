@@ -1,31 +1,53 @@
 #include "Etudiant.h"
 
+Etudiant::Etudiant()
+{
+	m_nomEtudiant = "EleveModele";
+	m_noteSur20 = 20;
+	m_noteSur10 = 10;
+}
 
-string Etudiant::getEtudiant() const
+Etudiant::Etudiant(string nom, int note20, int note10)
+{
+    m_nomEtudiant = nom;
+	this->m_noteSur20 = note20;
+    this->m_noteSur10 = note10;
+}
+
+string Etudiant::getNom() const
+{
+	return m_nomEtudiant;
+}
+
+void Etudiant::setNom(string nom)
 {
 
 }
-void Etudiant::setEtudiant()
-{
 
-}
+
 int Etudiant::getNoteSur20() const
 {
-
+	return m_noteSur20;
 }
-void Etudiant::setNoteSur20()
+
+void Etudiant::setNoteSur20(int noteSur20)
 {
 
 }
+
+
 int Etudiant::getNoteSur10() const
 {
-
+	return m_noteSur10;
 }
-void Etudiant::setNoteSur10()
+
+void Etudiant::setNoteSur10(int noteSur10)
 {
 
 }
+
+
 float Etudiant::calculerMoyenne()
 {
-
+	return 13.37;
 }

@@ -1,8 +1,10 @@
 #include <iostream>
+#include "Etudiant.h"
 using namespace std;
 
 int main()
 {
-	cout << "Ohaio sekai\n";
+	Etudiant e;
+	cout << e.getNom() << endl;
 	return 0;
 }
