@@ -47,7 +47,11 @@ void Etudiant::setNoteSur10(int noteSur10)
 }
 
 
-float Etudiant::calculerMoyenne()
+float Etudiant::calculerMoyenne(int noteSur10, int noteSur20)
 {
-	return 13.37;
+	float note;
+	note = noteSur10  * 2;
+	note += noteSur20;
+	note = note/2;
+	return  note;
 }

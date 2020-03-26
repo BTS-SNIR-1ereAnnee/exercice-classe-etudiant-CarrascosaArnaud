@@ -19,7 +19,7 @@ public:
     void setNoteSur20(int noteSur20);//Met la valeur de la note/20
     int getNoteSur10() const;//Renvoie la valeur de la note/10
     void setNoteSur10(int noteSur10);//Met la valeur de la note/10
-    float calculerMoyenne();//Calcule la moyenne des notes
+    float calculerMoyenne(int noteSur10, int noteSur20);//Calcule la moyenne des notes
 
 private:
     string m_nomEtudiant;
